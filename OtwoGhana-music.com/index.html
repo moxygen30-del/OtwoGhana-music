@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtwoGhana Music - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-ot">OT</span><span class="logo-two">two</span><span class="logo-ghana">GHANA</span><span class="logo-music">MUSIC</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="musicians.html">Singers</a></li>
+                <li><a href="instrumentalist.html">Instrumentalists</a></li>
+                <li><a href="band.html">Bands</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>OtwoGhana Music</h1>
+        <p>Your gateway to authentic Ghanaian instrumental music & professional musicians.</p>
+        <div class="hero-actions">
+            <a href="musicians.html" class="button-link">Find a Singer</a>
+            <a href="instrumentalist.html" class="button-link">Find an Instrumentalist</a>
+        </div>
+    </section>
+
+    <section id="intro-video" class="content-section">
+        <h2>Experience Our Sound</h2>
+        <p class="section-description">Watch our official introduction video to get a taste of OtwoGhana Music.</p>
+        <div class="video-responsive">
+            <iframe src="assets/videos/2927944-uhd_4096_2160_24fps.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="about" class="content-section bg-dark">
+        <h2>About OtwoGhana Music</h2>
+        <div class="about-container">
+            <img src="assets/images/photo_2025-09-19_23-58-39.jpg" alt="OtwoGhana Music Profile" class="profile-img">
+            <div>
+                <p>
+                    OtwoGhana Music is a premier platform dedicated to showcasing and providing
+                    the vibrant sounds of instrumental music from Ghana. Founded by [Afari Emmanuel],
+                    we serve as a hub for exceptional instrumentalists, offering bespoke
+                    music production, session recordings, and live performance bookings.
+                </p>
+                <p>
+                    Our mission is to bridge traditional Ghanaian rhythms with contemporary
+                    global sounds, creating unique auditory experiences and connecting talented
+                    musicians with projects worldwide. Whether you need a captivating melody,
+                    a rhythmic backbone, or a full instrumental arrangement, OtwoGhana Music
+                    is your trusted partner.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Get In Touch</h2>
+        <p>For general inquiries, collaborations, or to book a musician, please use the form below. Be specific about your needs!</p>
+        <form id="contact-form" action="contact.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name / Company" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="inquiry_type" required>
+                <option value="">Select Inquiry Type</option>
+                <option value="general">General Inquiry</option>
+                <option value="booking">Book an Instrumentalist</option>
+                <option value="collaboration">Collaboration</option>
+            </select>
+            <textarea name="message" placeholder="Tell us about your project, booking needs, or message..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>OtwoGhana Music</h3>
+                <p>Bringing the best of Ghanaian instrumental music to the world. A hub for professional musicians, producers, and artists.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="musicians.html">Singers</a></li>
+                    <li><a href="instrumentalist.html">Instrumentalists</a></li>
+                    <li><a href="band.html">Bands</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> moxygen30@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +233 534 668 155</p>
+                <p><i class="fas fa-map-marker-alt"></i> Sunyani, Bono Region, Ghana</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 OtwoGhana Music. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
